@@ -4,7 +4,9 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Calculator {
+    private ArrayList<Integer> number = new ArrayList<>();
 
+    //기능 메서드
     public int calculate(int intBox1, int intBox2, char charBox1) {
         if (charBox1 == '+') {
             int resultSum = intBox1 + intBox2;

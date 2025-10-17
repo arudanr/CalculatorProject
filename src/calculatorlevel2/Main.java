@@ -7,7 +7,6 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         Calculator calculator = new Calculator();
-        ArrayList<Integer> number = new ArrayList<>();
 
         for(;;) {
 
@@ -21,9 +20,7 @@ public class Main {
 
             //사칙연산 +-*/
             int result = calculator.calculate(intBox1, intBox2, charBox);
-            number.add(result);
             System.out.println("result = " + result);
-            System.out.println(number);
 
             // 탈출
             System.out.println("더 계산하시려면 아무값이나 입력해주세요. (exit 입력 시 종료)");
