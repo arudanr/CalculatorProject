@@ -4,10 +4,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Calculator {
-    public static void main(String[] args) {
 
-        ArrayList<Integer> number = new ArrayList<>();
-    }
     public int calculate(int intBox1, int intBox2, char charBox1) {
         if (charBox1 == '+') {
             int resultSum = intBox1 + intBox2;
@@ -16,8 +13,8 @@ public class Calculator {
             int resultSub = intBox1 - intBox2;
             return resultSub;
         }  else if (charBox1 == '*') {
-            int resultMult = intBox1 * intBox2;
-            return resultMult;
+            int resultMul = intBox1 * intBox2;
+            return resultMul;
         }  else if (charBox1 == '/') {
             try {
                 int  divide = intBox1 / intBox2;
