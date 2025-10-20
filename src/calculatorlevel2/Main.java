@@ -8,6 +8,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         Calculator calculator = new Calculator();
 
+
         for(;;) {
 
             //양의 정수 입력 받기
@@ -21,6 +22,7 @@ public class Main {
             //사칙연산 +-*/
             int result = calculator.calculate(intBox1, intBox2, charBox);
             System.out.println("result = " + result);
+
 
             // 탈출
             System.out.println("더 계산하시려면 아무값이나 입력해주세요. (exit 입력 시 종료)");
