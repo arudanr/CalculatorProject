@@ -41,6 +41,7 @@ public class Main {
             int result = calculator.calculate(intBox1, intBox2, charBox);
             System.out.println("result = " + result);
 
+            // 콜렉션필드 첫번째 값 제거
             calculator.removeResult();
 
             // 탈출

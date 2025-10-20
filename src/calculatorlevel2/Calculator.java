@@ -45,6 +45,7 @@ public class Calculator {
     public void setArrayList(ArrayList<Integer> arrayList) {
         this.arrayList = arrayList;
     }
+    // 콜렉션 필드 첫번째 값 제거
     public void removeResult() {
         arrayList.remove(0);
     }
