@@ -14,31 +14,38 @@ public class Calculator {
         if (charBox1 == '+') {
             result = intBox1 + intBox2;
             arrayList.add(result);
+            System.out.println(arrayList);
             return result;
         } else if (charBox1 == '-') {
             result = intBox1 - intBox2;
             arrayList.add(result);
+            System.out.println(arrayList);
             return result;
         }  else if (charBox1 == '*') {
             result = intBox1 * intBox2;
             arrayList.add(result);
+            System.out.println(arrayList);
             return result;
         }  else if (charBox1 == '/') {
             try {
                 result = intBox1 / intBox2;
                 arrayList.add(result);
+                System.out.println(arrayList);
             } catch (ArithmeticException e) {
                 System.out.println("나눗셈 연산에서 분모(두번째 정수)에 0이 입력될 수 없습니다.");
             }
         }
        return 0;
     }
-    //세터
+    // 게터
+    public ArrayList<Integer> getArrayList() {
+        return arrayList;
+    }
+    // 세터
     public void setArrayList(ArrayList<Integer> arrayList) {
         this.arrayList = arrayList;
     }
-    //게터
-    public ArrayList<Integer> getArrayList() {
-        return arrayList;
+    public void removeResult() {
+        arrayList.remove(0);
     }
 }

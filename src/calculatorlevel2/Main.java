@@ -37,8 +37,11 @@ public class Main {
                 }
             }
 
+            // Calculator클래스 사용
             int result = calculator.calculate(intBox1, intBox2, charBox);
             System.out.println("result = " + result);
+
+            calculator.removeResult();
 
             // 탈출
             System.out.println("더 계산하시려면 아무값이나 입력해주세요. (exit 입력 시 종료)");
