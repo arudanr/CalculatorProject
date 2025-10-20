@@ -5,31 +5,40 @@ import java.util.Scanner;
 
 public class Calculator {
     // 속성
-    public ArrayList<Integer> arrayList =  new ArrayList<>();
+    private ArrayList<Integer> arrayList =  new ArrayList<>();
     //생성자
-
 
     //기능 메서드
     public int calculate(int intBox1, int intBox2, char charBox1) {
         int result = 0;
         if (charBox1 == '+') {
             result = intBox1 + intBox2;
+            arrayList.add(result);
             return result;
         } else if (charBox1 == '-') {
             result = intBox1 - intBox2;
+            arrayList.add(result);
             return result;
         }  else if (charBox1 == '*') {
             result = intBox1 * intBox2;
+            arrayList.add(result);
             return result;
         }  else if (charBox1 == '/') {
             try {
                 result = intBox1 / intBox2;
-                System.out.println("나눈셈 결과값 = " + result);
+                arrayList.add(result);
             } catch (ArithmeticException e) {
                 System.out.println("나눗셈 연산에서 분모(두번째 정수)에 0이 입력될 수 없습니다.");
             }
         }
-        arrayList.add(result);
-       return result;
+       return 0;
+    }
+    //세터
+    public void setArrayList(ArrayList<Integer> arrayList) {
+        this.arrayList = arrayList;
+    }
+    //게터
+    public ArrayList<Integer> getArrayList() {
+        return arrayList;
     }
 }
